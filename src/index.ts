@@ -1,6 +1,6 @@
  import request = require("request");
  import md5 = require("md5");
- 
+
  interface IEPochtaError {
     error:string;
     code:string;
@@ -212,5 +212,9 @@ export class Stat {
     //dateTime example 2012-05-01 00:20:00
     sendSMSGroup(params: {sender?: string, text?: string, phones?: number[], datetime?: string, sms_lifetime?: number}){
         return this.gateway.send('sendsmsgroup', params);
+    }
+
+    getUserBalance(params) {
+        return this.gateway.send('getUserBalance', params);
     }
 }

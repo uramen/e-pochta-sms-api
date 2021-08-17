@@ -1,5 +1,5 @@
 {
-  "name": "e-pochta-sms-api",
+  "name": "epochta-pullcrm",
   "version": "0.0.1",
   "description": "Node wrapper for ePochta API(https://www.epochta.com.ua/products/sms/v3.php)",
   "repository": {
